@@ -7,7 +7,7 @@ export class InformationService {
   info: any = {};
   load: boolean = false;
 
-  team: any = {}
+  team: any;
   isLoadAbout: boolean = false;
 
   constructor(public http: Http) {

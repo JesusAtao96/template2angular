@@ -8,6 +8,7 @@ import { app_routing } from './app.routes'
 
 // Servicios
 import { InformationService } from "./services/information.service";
+import { ProductsService } from './services/products.service';
 
 // Componentes
 import { AppComponent } from './app.component';
@@ -32,7 +33,7 @@ import { ProductComponent } from './components/product/product.component';
     HttpModule,
     app_routing
   ],
-  providers: [InformationService],
+  providers: [ InformationService, ProductsService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
